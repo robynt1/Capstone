@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap');
+
+
+.submitButton {
+    margin-left: 500px;
+}
+
+.photo {
+    height: 200px;
+    width: 700px;
+}
+
+.welcome {
+    margin-top: 300px;
+    font-size: 400px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.body-welcome{
+    background-color: darkblue;
+}
+
+

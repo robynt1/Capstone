@@ -1,0 +1,135 @@
+.Create {}
+
+.personal {
+    
+    margin: 0 auto;
+    width: 750px;
+    
+}
+
+.welcoming-title{
+    font-size: smaller !important;
+    color: #0075b7;
+
+}
+
+#formContainer {
+    padding-top: -50px;
+    transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8); /* IE 9 */
+    -webkit-transform: scale(0.8, 0.8); /* Safari and Chrome */
+    -o-transform: scale(0.8, 0.8); /* Opera */
+    -moz-transform: scale(0.8, 0.8); /* Firefox */
+    
+}
+
+.title {
+    
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 1060px;
+    color: #0075b7;
+    style: italic;
+    margin-bottom: 20px;
+    font-size: 20px;
+    
+}
+
+.intro{ 
+        margin-top: 40px;
+        color:#0075b7;
+        font-size: 12;
+        font-family: "Helvetica Neue",Helvetica,Arial;
+        font-size: 30px;
+}
+
+.personal-details {
+    margin-top: 40px;
+    text-align: center;
+    color: #0075b7;
+    style: italic;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#personalDetails {
+    margin-left: 305px;
+    margin-top: -70px;
+    text-align: left;
+    color: #0075b7;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.carDetailsHeader {
+    width: 50%;
+    margin-right: 850px !important;
+    font-size: 20px !important;
+    color: #0075b7;
+
+}
+
+.carDetails {
+    margin-left: 510px;
+    margin-top: 40px;
+    margin-right: 600px !important;
+    text-align: left;
+    color: #0075b7;
+    style: italic;
+    margin-bottom: 20px;
+    font-size: 20px !important;
+    margin-right: 500px !important;  
+}
+
+
+.vehicle {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mainDiv{
+    height: 200px !important;
+    width: 60% !important;
+      
+}
+
+.form{
+    
+    border-radius: 5px !important;
+    margin-left: 300px !important;
+    margin-right: 300px !important;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right:20px;
+    padding-bottom:20px; 
+}
+
+.mainDiv {
+    width: 1000px;
+}
+
+
+.buttonSubmit{
+    margin-top: 10px;
+}
+
+.modal {
+    /* position: fixed; */
+    top: 20;
+    /* left: 0; */
+    z-index: 1055;
+    display: none;
+    width: 100%;
+    height: 25%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+
+.photo2{
+    margin-top:  -50px;
+    margin-bottom: -50px;
+    max-width: 100%;
+    height: 250px;
+}
+
