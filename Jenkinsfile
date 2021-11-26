@@ -1,4 +1,4 @@
-def projectName='capstoneProject'
+def projectName='capstoneproject'
 def version = "0.0${currentBuild.number}"
 def dockerImageTag = "${projectName}:${version}"
 
