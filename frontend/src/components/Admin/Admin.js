@@ -85,13 +85,13 @@ function Admin() {
   return (
     <div>
       <div class="ui mini three item menu">
-        <a href="http://localhost:3000/" class="item">
+        <a href=`${SERVER_URL}/capstone/` class="item">
           Home
         </a>
-        <a href="http://localhost:3000/Create" class="item">
+        <a href=`${SERVER_URL}/capstone/Create` class="item">
           Get a Quote
         </a>
-        <a href="http://localhost:3000/Admin" class="item">
+        <a href=`${SERVER_URL}/capstone/Admin` class="item">
           Admin Panel
         </a>
       </div>
