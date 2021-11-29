@@ -106,7 +106,7 @@ function Create() {
           <div id="formContainer">
             <h2 class="personalDetails" id="personalDetails">
               {" "}
-              <i class="user icon"></i> Personal Details{" "}
+              <i class="user icon"></i> Please enter the following details:{" "}
             </h2>
             <Form>
               <div class="ui divided three column grid">
@@ -181,17 +181,6 @@ function Create() {
                       />
                     </Form.Field>
                   </div>
-                </div>
-                <div class="carDetailsHeader">
-                  <h2
-                    style={{
-                      width: "50%",
-                      marginRight: "950px",
-                      fontSize: "22px",
-                    }}
-                  >
-                    <i class="car icon"></i> Car Details
-                  </h2>
                 </div>
                 <div class="row">
                   <div class="column">
@@ -312,7 +301,6 @@ function Create() {
           <Modal.Header>Quote Obtained</Modal.Header>
           <Modal.Content>
             <p>Your quote is £{quote}.</p>
-
           </Modal.Content>
           <Modal.Actions>
             <Button positive onClick={() => setOpen(false)}>
