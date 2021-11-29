@@ -85,13 +85,13 @@ function Admin() {
   return (
     <div>
       <div class="ui mini three item menu">
-        <a href=`${SERVER_URL}/capstone/` class="item">
+        <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/customerDetails" class="item">
           Home
         </a>
-        <a href=`${SERVER_URL}/capstone/Create` class="item">
+        <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/Create" class="item">
           Get a Quote
         </a>
-        <a href=`${SERVER_URL}/capstone/Admin` class="item">
+        <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/Admin" class="item">
           Admin Panel
         </a>
       </div>

@@ -120,6 +120,6 @@ public class FactorCalculatorTest {
         FactorCalculator myCalculator = new FactorCalculator();
 
 
-        assertEquals(371.71, myCalculator.calculateInsurcanceQuote(driver), "0.1");
+        assertEquals("371.71", myCalculator.calculateInsurcanceQuote(driver), "0.1");
     }
 }
