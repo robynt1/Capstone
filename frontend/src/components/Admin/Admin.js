@@ -18,6 +18,9 @@ function Admin() {
   const [show, setShow] = useState(false);
   const [telNumber, settelNumber] = useState("");
   const [prefix, setprefix] = useState("");
+  const [open, setOpen] = useState(false);
+  const [firstName, setfirstName] = useState("");
+
 
   function getUser(e) {
     e.preventDefault();
@@ -45,7 +48,7 @@ function Admin() {
 
   function putUserPhone(e) {
     e.preventDefault();
-
+    openModal();
     const endpointURL = `${SERVER_URL}/capstone/customerDetails`;
     if (telNumber.length === 11) {
       axios
@@ -82,6 +85,10 @@ function Admin() {
   function Failed() {
     toast("Failed, please try again.");
   }
+
+   function openModal(){
+      setOpen(true);
+    }
   return (
     <div>
       <div class="ui mini three item menu">
@@ -115,46 +122,18 @@ function Admin() {
           </Button>
         </Form>
       </div>
-      <div id = "table">
-      <Container>
-        <Row>
-          <Col>
-            <div>
-              <Table style = {{width:"1000px"}}>
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Car Type</th>
-                    <th>Quote Amount</th>
-                    <th>Delete</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>{tableData.id}</td>
-                    <td>{tableData.firstName}</td>
-                    <td>{tableData.lastName}</td>
-                    <td>{tableData.carType}</td>
-                    <td>{tableData.quote}</td>
-                    <td>
-                      <Button
-                        variant="primary"
-                        type="submit"
-                        onClick={deleteUser}
-                      >
-                        Delete
+         <Modal size="tiny" open={open}>
+                    <Modal.Header>Success!</Modal.Header>
+                    <Modal.Content>
+                      <p>Name is : {firstName}</p>
+                    </Modal.Content>
+                    <Modal.Actions>
+                      <Button positive onClick={() => setOpen(false)}>
+                        Close
                       </Button>
-                    </td>
-                  </tr>
-                </tbody>
-              </Table>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-      </div>
+                    </Modal.Actions>
+                  </Modal>
+                </Form>
     <div class = "updateTelNumber">
       <h3 class="telNumberHeader">Update Telephone Number</h3>
       <div class="formID">
