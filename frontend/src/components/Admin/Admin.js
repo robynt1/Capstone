@@ -19,6 +19,7 @@ function Admin() {
   const [show, setShow] = useState(false);
   const [telNumber, settelNumber] = useState("");
   const [prefix, setprefix] = useState("");
+  const [firstName, setfirstName] = useState("");
 
   function getUser(e) {
     e.preventDefault();
