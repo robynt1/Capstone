@@ -73,7 +73,6 @@ function Admin() {
       }, 5000);
     }
   }
-
   function notify() {
     toast("Success, user deleted.");
     setTimeout(function () {
@@ -136,9 +135,6 @@ function Admin() {
               <Button positive onClick={() => setOpen(false)}>
                 Close
               </Button>
-               <Button positive onClick={() => setOpen(false)}>
-                              Close
-                            </Button>
                               <Button onClick={() => deleteUser() }>
                                           Delete User
                                         </Button>
