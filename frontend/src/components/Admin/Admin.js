@@ -29,7 +29,7 @@ function Admin() {
     axios.get(endpointURL + `?id=${ID}`).then((response) => {
       console.log(response.data);
       setfirstName(response.data.firstName);
-      setlastName(response.data.lastNameName);
+      setLastName(response.data.lastName);
       setquote(response.data.quote);
       settelNumber(response.data.telNumber);
 
@@ -128,8 +128,8 @@ function Admin() {
             <Modal.Header>User Information:</Modal.Header>
             <Modal.Content>
               <p>First Name is: {firstName}</p>
-              <p>Second Name is: {secondName}</p>
-              <p>Quote Amount is: {quoteAmount}</p>
+              <p>Second Name is: {lastName}</p>
+              <p>Quote Amount is: {quote}</p>
               <p>Telephone is: {telNumber}</p>
             </Modal.Content>
             <Modal.Actions>
