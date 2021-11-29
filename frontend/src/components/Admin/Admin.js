@@ -17,8 +17,8 @@ function Admin() {
   const [prefix, setprefix] = useState("");
   const [open, setOpen] = useState(false);
   const [firstName, setfirstName] = useState("");
-  const [secondName, setsecondName] = useState("");
-  const [quoteAmount, setquoteAmount] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [quote, setquote] = useState("");
 
   function getUser(e) {
     e.preventDefault();
