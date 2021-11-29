@@ -22,7 +22,7 @@ function Admin() {
     e.preventDefault();
     console.log(ID);
 
-    const endpointURL = `http://localhost:8080/capstone/applicant`;
+    const endpointURL = `const endpointURL = `${SERVER_URL}/application`;
     openModal();
     axios.get(endpointURL + `?id=${ID}`).then((response) => {
       console.log(response.data);
@@ -34,7 +34,7 @@ function Admin() {
   }
   function deleteUser() {
     if (tableData) {
-      const endpointURL = `http://localhost:8080/capstone/delete`;
+      const endpointURL = `const endpointURL = `${SERVER_URL}/delete`;
       axios
         .delete(endpointURL + `?id=${ID}`)
         .then(() => {
@@ -46,7 +46,7 @@ function Admin() {
   function putUserPhone(e) {
     e.preventDefault();
 
-    const endpointURL = `http://localhost:8080/capstone/customerDetails`;
+    const endpointURL = `const endpointURL = `${SERVER_URL}/customerDetails`;
 
     if (telNumber.length === 11) {
       axios
