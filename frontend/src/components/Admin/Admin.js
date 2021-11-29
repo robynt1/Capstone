@@ -17,7 +17,8 @@ function Admin() {
   const [prefix, setprefix] = useState("");
   const [open, setOpen] = useState(false);
   const [firstName, setfirstName] = useState("");
-
+  const [secondName, setsecondName] = useState("");
+  const [quoteAmount, setquoteAmount] = useState("");
 
   function getUser(e) {
     e.preventDefault();
@@ -27,7 +28,10 @@ function Admin() {
     openModal();
     axios.get(endpointURL + `?id=${ID}`).then((response) => {
       console.log(response.data);
-       setfirstName(response.data.firstName);
+      setfirstName(response.data.firstName);
+      setsecondName(response.data.secondName);
+      setquoteAmount(response.data.quoteAmount);
+      settelNumber(response.data.telNumber);
 
     })
       .catch((err) =>
@@ -121,9 +125,12 @@ function Admin() {
             Submit
           </Button>
           <Modal size="tiny" open={open}>
-            <Modal.Header>Success!</Modal.Header>
+            <Modal.Header>User Information:</Modal.Header>
             <Modal.Content>
-              <p>Name is : {firstName}</p>
+              <p>First Name is: {firstName}</p>
+              <p>Second Name is: {secondName}</p>
+              <p>Quote Amount is: {quoteAmount}</p>
+              <p>Telephone is: {telNumber}</p>
             </Modal.Content>
             <Modal.Actions>
               <Button positive onClick={() => setOpen(false)}>
