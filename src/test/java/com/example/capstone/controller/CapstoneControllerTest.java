@@ -1,8 +1,9 @@
-/*package com.example.capstone.controller;
+package com.example.capstone.controller;
 
 import com.example.capstone.model.Capstone;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.var;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -10,7 +11,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.web.servlet.MockMvc;
-
 
 import java.util.List;
 
@@ -51,23 +51,23 @@ class CapstoneControllerTest {
     @Test
     @DirtiesContext
     void givenDBInitilizedWith3Records_whenPOSTPeople_shouldSaveAndReturn() throws Exception {
-        var firstName = "Robyn";
-        var lastName = "Thompson";
-        var id = 1L;
-        var prefix = "Miss";
-        var telNumber= "12345678910";
-        var address1 = "123";
-        var address2 = "Something Road";
-        var city = "Belfast";
-        var postCode = "BT123";
-        var carType = "Cabriolet";
-        var engineSize = "1000";
-        var additionalDrivers = "2";
-        var commercialPurposes = "Yes";
-        var outsideState = "Yes";
-        var dateRegistered = "10-02-2021";
-        var vehicleValue = "5000";
-        Capstone person = new Capstone(id, prefix, firstName, lastName,  telNumber, address1, address2, city, postCode, carType, engineSize, additionalDrivers, commercialPurposes, outsideState, dateRegistered, vehicleValue);
+        String firstName = "Robyn";
+        String lastName = "Thompson";
+        long id = 1L;
+        String prefix = "Miss";
+        String telNumber = "12345678910";
+        String address1 = "123";
+        String address2 = "Something Road";
+        String city = "Belfast";
+        String postCode = "BT123";
+        String carType = "Cabriolet";
+        String engineSize = "1000";
+        String additionalDrivers = "2";
+        String commercialPurposes = "Yes";
+        String outsideState = "Yes";
+        String dateRegistered = "10-02-2021";
+        String vehicleValue = "5000";
+        Capstone person = new Capstone(id, prefix, firstName, lastName, telNumber, address1, address2, city, postCode, carType, engineSize, additionalDrivers, commercialPurposes, outsideState, dateRegistered, vehicleValue);
 
         final var personAsJSON = objectMapper.writeValueAsString(person);
 
@@ -106,4 +106,3 @@ class CapstoneControllerTest {
 
 }
 
- */

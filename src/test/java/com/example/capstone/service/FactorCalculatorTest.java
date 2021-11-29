@@ -1,9 +1,7 @@
-/*package com.example.capstone.service;
+package com.example.capstone.service;
 
 import com.example.capstone.model.Capstone;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.Assertions.*;
-import org.springframework.util.Assert;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -27,7 +25,7 @@ public class FactorCalculatorTest {
 
         FactorCalculator myCalculator = new FactorCalculator();
 
-        assertNotEquals(1.6, myCalculator.calculateVehicleTypeFactor("Hatchbackk"), 0.0);
+        assertNotEquals(1.6, myCalculator.calculateVehicleTypeFactor("Hatchback"), 0.0);
 
     }
 
@@ -96,28 +94,28 @@ public class FactorCalculatorTest {
     }
 
     @Test
-    public void testCalculateInsurcanceQuote(){
+    public void testCalculateInsuranceQuote() {
 
         // setup driver
-        var firstName = "Robyn";
-        var lastName = "Thompson";
-        var id = 1L;
-        var prefix = "Miss";
-        var telNumber= "12345678910";
-        var address1 = "123";
-        var address2 = "Something Road";
-        var city = "Belfast";
-        var postCode = "BT123";
-        var carType = "Hatchback";
-        var engineSize = "1600";
-        var additionalDrivers = "3";
-        var commercialPurposes = "Yes";
-        var outsideState = "Yes";
-        var dateRegistered = "11-05-1997";
-        var vehicleValue = "5000";
-        Capstone driver = new Capstone(id, prefix, firstName, lastName,  telNumber, address1,
-                                        address2, city, postCode, carType, engineSize, additionalDrivers,
-                                        commercialPurposes, outsideState, dateRegistered, vehicleValue);
+        String firstName = "Robyn";
+        String lastName = "Thompson";
+        long id = 1L;
+        String prefix = "Miss";
+        String telNumber = "12345678910";
+        String address1 = "123";
+        String address2 = "Something Road";
+        String city = "Belfast";
+        String postCode = "BT123";
+        String carType = "Hatchback";
+        String engineSize = "1600";
+        String additionalDrivers = "3";
+        String commercialPurposes = "Yes";
+        String outsideState = "Yes";
+        String dateRegistered = "11-05-1997";
+        String vehicleValue = "5000";
+        Capstone driver = new Capstone(id, prefix, firstName, lastName, telNumber, address1,
+                address2, city, postCode, carType, engineSize, additionalDrivers,
+                commercialPurposes, outsideState, dateRegistered, vehicleValue);
 
         FactorCalculator myCalculator = new FactorCalculator();
 
@@ -125,4 +123,3 @@ public class FactorCalculatorTest {
         assertEquals(371.71, myCalculator.calculateInsurcanceQuote(driver), "0.1");
     }
 }
-*/
