@@ -29,8 +29,8 @@ function Admin() {
     axios.get(endpointURL + `?id=${ID}`).then((response) => {
       console.log(response.data);
       setfirstName(response.data.firstName);
-      setsecondName(response.data.secondName);
-      setquoteAmount(response.data.quoteAmount);
+      setlastName(response.data.lastNameName);
+      setquote(response.data.quote);
       settelNumber(response.data.telNumber);
 
     })
