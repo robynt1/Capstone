@@ -85,7 +85,7 @@ function Admin() {
   return (
     <div>
       <div class="ui mini three item menu">
-        <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/customerDetails" class="item">
+        <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/" class="item">
           Home
         </a>
         <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/Create" class="item">

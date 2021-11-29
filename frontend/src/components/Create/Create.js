@@ -75,13 +75,13 @@ function Create() {
   return (
     <>
       <div class="ui mini three item menu">
-        <a href="/" class="item">
+        <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/" class="item">
           Home
         </a>
-        <a href="/Create" class="item">
+        <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/Create" class="item">
           Get a Quote
         </a>
-        <a href="/Admin" class="item">
+        <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/Admin" class="item">
           Admin Panel
         </a>
       </div>

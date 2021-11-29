@@ -5,13 +5,13 @@ function Welcome() {
   return (
   <div className = "body-welcome">
       <div class="ui mini three item menu">
-        <a href="http://localhost:3000/" class="item">
+        <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/" class="item">
           Home
         </a>
-        <a href="http://localhost:3000/Create" class="item">
+        <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/Create" class="item">
           Get a Quote
         </a>
-        <a href="http://localhost:3000/Admin" class="item">
+        <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/Admin" class="item">
           Admin Panel
         </a>
         {/* body */}
