@@ -27,7 +27,7 @@ function Admin() {
     openModal();
     axios.get(endpointURL + `?id=${ID}`).then((response) => {
       console.log(response.data);
-       .then((response) => setfirstName(response.data.firstName))
+       setfirstName(response.data.firstName))
 
     })
       .catch((err) =>
