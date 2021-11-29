@@ -136,6 +136,12 @@ function Admin() {
               <Button positive onClick={() => setOpen(false)}>
                 Close
               </Button>
+               <Button positive onClick={() => setOpen(false)}>
+                              Close
+                            </Button>
+                              <Button onClick={() => deleteUser() }>
+                                          Delete User
+                                        </Button>
             </Modal.Actions>
           </Modal>
         </Form>
