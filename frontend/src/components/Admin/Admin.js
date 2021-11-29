@@ -27,7 +27,7 @@ function Admin() {
     console.log(ID);
 
     const endpointURL = `${SERVER_URL}/capstone/applicant`;
-
+    openModal();
     axios.get(endpointURL+`?id=${ID}`).then((response) => {
       console.log(response.data);
       setTableData(response.data);
@@ -48,7 +48,7 @@ function Admin() {
 
   function putUserPhone(e) {
     e.preventDefault();
-    openModal();
+
     const endpointURL = `${SERVER_URL}/capstone/customerDetails`;
     if (telNumber.length === 11) {
       axios
@@ -104,64 +104,62 @@ function Admin() {
       </div>
       <h1 style = {{marginTop: "30px"}}> Welcome to the Admin Panel </h1>
       <h4 style = {{marginBottom: "80px"}}> Please enter an ID to continue </h4>
-      <div>
-        <ToastContainer />
-      </div>
-      <div class="formID">
-        <Form>
-          <Form.Group className="mb-3" controlId="formUserID">
-            <Form.Label>User ID:</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="ID"
-              onChange={(e) => setID(e.target.value)}
-            />
-          </Form.Group>
-          <Button variant="primary" type="submit" onClick={getUser}>
-            Submit
-          </Button>
-        </Form>
-
-         <Modal size="tiny" open={open}>
-                    <Modal.Header>Success!</Modal.Header>
-                    <Modal.Content>
-                      <p>Name is : {firstName}</p>
-                    </Modal.Content>
-                    <Modal.Actions>
-                      <Button positive onClick={() => setOpen(false)}>
-                        Close
-                      </Button>
-                    </Modal.Actions>
-                  </Modal>
+       <div>
+              <ToastContainer />
+            </div>
+            <div class="formID">
+              <Form>
+                <Form.Group className="mb-3" controlId="formUserID">
+                  <Form.Label>User ID:</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="ID"
+                    onChange={(e) => setID(e.target.value)}
+                  />
+                </Form.Group>
+                <Button variant="primary" type="submit" onClick={getUser}>
+                  Submit
+                </Button>
+                <Modal size="tiny" open={open}>
+                  <Modal.Header>Success!</Modal.Header>
+                  <Modal.Content>
+                    <p>Name is : {firstName}</p>
+                  </Modal.Content>
+                  <Modal.Actions>
+                    <Button positive onClick={() => setOpen(false)}>
+                      Close
+                    </Button>
+                  </Modal.Actions>
+                </Modal>
+              </Form>
+            </div>
+            <div class="updateTelNumber">
+              <h3 class="telNumberHeader">Update Telephone Number</h3>
+              <div class="formID">
+                <Form>
+                  <Form.Group className="mb-3" controlId="formUserID">
+                    <Form.Label>User ID:</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="ID"
+                      onChange={(e) => setID(e.target.value)}
+                    />
+                  </Form.Group>
+                  <Form.Group className="mb-3" controlId="formUserID">
+                    <Form.Label>Phone Number: </Form.Label>
+                    <Form.Control
+                      type="number"
+                      placeholder="Telephone Number"
+                      onChange={(e) => settelNumber(e.target.value)}
+                    />
+                  </Form.Group>
+                  <Button variant="primary" type="submit" onClick={putUserPhone}>
+                    Submit
+                  </Button>
                 </Form>
-    <div class = "updateTelNumber">
-      <h3 class="telNumberHeader">Update Telephone Number</h3>
-      <div class="formID">
-        <Form>
-          <Form.Group className="mb-3" controlId="formUserID">
-            <Form.Label>User ID:</Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="ID"
-              onChange={(e) => setID(e.target.value)}
-            />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formUserID">
-            <Form.Label>Phone Number: </Form.Label>
-            <Form.Control
-              type="number"
-              placeholder="Telephone Number"
-              onChange={(e) => settelNumber(e.target.value)}
-            />
-          </Form.Group>
-          <Button variant="primary" type="submit" onClick={putUserPhone}>
-            Submit
-          </Button>
-        </Form>
-        </div>
-      </div>
-    </div>
-  );
+              </div>
+            </div>
+          </div>
 }
 
 export default Admin;
