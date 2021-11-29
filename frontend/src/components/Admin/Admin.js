@@ -9,6 +9,7 @@ import Col from "react-bootstrap/Col";
 import Table from "react-bootstrap/Table";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+const [open, setOpen] = useState(false);
 import SERVER_URL from "../../utils/constants.js";
 import axios from "axios";
 
@@ -155,6 +156,17 @@ function Admin() {
         </Row>
       </Container>
       </div>
+       <Modal size="tiny" open={open}>
+                  <Modal.Header>Success!</Modal.Header>
+                  <Modal.Content>
+                    <p>Name is : {firstName}</p>
+                  </Modal.Content>
+                  <Modal.Actions>
+                    <Button positive onClick={() => setOpen(false)}>
+                      Close
+                    </Button>
+                  </Modal.Actions>
+                </Modal>
     <div class = "updateTelNumber">
       <h3 class="telNumberHeader">Update Telephone Number</h3>
       <div class="formID">
