@@ -6,7 +6,7 @@ import "./Create.css";
 import "semantic-ui-css/semantic.min.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import SERVER_URL from "../../utils/constants.js";
 function Create() {
   const [prefix, setPrefix] = useState("");
   const [firstName, setFirstName] = useState("");
@@ -59,7 +59,7 @@ function Create() {
     if (!validateFormData(formData)) {
       return;
     }
-    const endpointURL = "http://localhost:8080/capstone";
+    const endpointURL = `${SERVER_URL}/capstone`;
     validateFormData(formData);
     notify();
     axios

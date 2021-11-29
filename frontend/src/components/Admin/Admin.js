@@ -9,7 +9,7 @@ import Col from "react-bootstrap/Col";
 import Table from "react-bootstrap/Table";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import SERVER_URL from "../../utils/constants.js";
 import axios from "axios";
 
 function Admin() {
@@ -23,7 +23,7 @@ function Admin() {
     e.preventDefault();
     console.log(ID);
 
-    const endpointURL = `http://localhost:8080/capstone/applicant`;
+    const endpointURL = `${SERVER_URL}/capstone/applicant`;
 
     axios.get(endpointURL+`?id=${ID}`).then((response) => {
       console.log(response.data);
@@ -34,7 +34,7 @@ function Admin() {
 }
   function deleteUser() {
     if (tableData) {
-      const endpointURL = `http://localhost:8080/capstone/delete`;
+      const endpointURL = `${SERVER_URL}/capstone/delete`;
       axios
         .delete(endpointURL + `?id=${ID}`)
         .then(() => {
@@ -46,8 +46,7 @@ function Admin() {
   function putUserPhone(e) {
     e.preventDefault();
 
-    const endpointURL = `http://localhost:8080/capstone/customerDetails`;
-
+    const endpointURL = `${SERVER_URL}/capstone/customerDetails`;
     if (telNumber.length === 11) {
       axios
         .put(endpointURL + `?id=${ID}&newTelephoneNumber=${telNumber}`)
