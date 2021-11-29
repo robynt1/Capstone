@@ -121,7 +121,7 @@ function Admin() {
             Submit
           </Button>
         </Form>
-      </div>
+
          <Modal size="tiny" open={open}>
                     <Modal.Header>Success!</Modal.Header>
                     <Modal.Content>
