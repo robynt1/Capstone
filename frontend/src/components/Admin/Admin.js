@@ -7,6 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {  Modal } from "semantic-ui-react";
 import axios from "axios";
+import SERVER_URL from "../../utils/constants.js";
 
 function Admin() {
   const [tableData, setTableData] = useState([]);
