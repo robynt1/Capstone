@@ -25,7 +25,7 @@ public class FactorCalculatorTest {
 
         FactorCalculator myCalculator = new FactorCalculator();
 
-        assertNotEquals(1.9, myCalculator.calculateVehicleTypeFactor("Hatchback"), 0.0);
+        assertNotEquals(1.2, myCalculator.calculateVehicleTypeFactor("Hatchback"), 0.0);
 
     }
 
@@ -35,7 +35,7 @@ public class FactorCalculatorTest {
 
         FactorCalculator myCalculator = new FactorCalculator();
 
-        assertEquals(23.5, myCalculator.calculateEngineSizeFactor("2500"), 0.0);
+        assertEquals(2.5, myCalculator.calculateEngineSizeFactor("2500"), 0.0);
         assertEquals(1.0, myCalculator.calculateEngineSizeFactor("1000"), 0.0);
         assertEquals(1.6, myCalculator.calculateEngineSizeFactor("1600"), 0.0);
         assertEquals(2.0, myCalculator.calculateEngineSizeFactor("2000"), 0.0);
