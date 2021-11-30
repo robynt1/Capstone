@@ -101,7 +101,7 @@ function Admin() {
         <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/Create" class="item">
           Get a Quote
         </a>
-        <a href="http://localhost:3000/Admin" class="item">
+        <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/Admin" class="item">
           Admin Panel
         </a>
       </div>
@@ -112,7 +112,7 @@ function Admin() {
       <div class="formID">
         <Form>
           <Form.Group className="mb-3" controlId="formUserID">
-          <h3 id = "customerView"> <i class="address card outline icon"></i>View a customer </h3>
+          <h3 style ={{color : "#0075b7"}}> <i class="address card outline icon"></i>View a customer </h3>
             <Form.Label>User ID:</Form.Label>
             <Form.Control
               type="text"
