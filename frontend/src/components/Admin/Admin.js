@@ -94,7 +94,7 @@ function Admin() {
   }
   return (
     <div>
-      <div class="ui mini three item menu" style={{ fontSize: "25px" }}>
+      <div class="ui mini three item menu">
         <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/" class="item">
           Home
         </a>

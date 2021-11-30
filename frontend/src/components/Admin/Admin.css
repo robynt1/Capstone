@@ -1,7 +1,6 @@
 .formID{
     width: 900px;
     margin: 0 auto;
-
 }
 
 .personalDetails{
@@ -23,20 +22,11 @@
 
 .ui.tiny.modal {
     width: 540px;
-    height: 300px;
+    height: 250px;
     margin: 0;
     left: 35%!important;
     top: 30% !important;
 }
-
-.table{
-
-    border-radius: 5px;
-    margin-left: 10%;
-    margin-right: 55%;
-    margin-top: 150px;
-}
-
 
 .personal-Details1{
     margin-top: 5px;
@@ -46,7 +36,7 @@
     margin-bottom: 20px;
     font-size: 15px;
 }
-/* test */
+
 .telNumberHeader{
     margin-top: 40px;
     text-align: center;
