@@ -39,7 +39,7 @@ function Admin() {
   } else {
         Failed();
   }
-
+}
   function deleteUser() {
     if (tableData) {
        const endpointURL = `${SERVER_URL}/capstone/delete`;
