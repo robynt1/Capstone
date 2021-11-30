@@ -106,14 +106,13 @@ function Admin() {
         </a>
       </div>
       <h1 style={{ marginTop: "70px" }}> Welcome to the Admin Panel </h1>
-      <h4 style={{ marginBottom: "80px" }}> View a customer </h4>
       <div>
         <ToastContainer />
       </div>
       <div class="formID">
         <Form>
           <Form.Group className="mb-3" controlId="formUserID">
-          <h4> View a customer </h4>
+          <h3> View a customer </h3>
             <Form.Label>User ID:</Form.Label>
             <Form.Control
               type="text"
