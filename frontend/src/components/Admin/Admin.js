@@ -112,7 +112,7 @@ function Admin() {
       <div class="formID">
         <Form>
           <Form.Group className="mb-3" controlId="formUserID">
-          <h3> View a customer </h3>
+          <h3 id = "customerView"> View a customer </h3>
             <Form.Label>User ID:</Form.Label>
             <Form.Control
               type="text"
@@ -143,7 +143,7 @@ function Admin() {
         </Form>
       </div>
       <div class="updateTelNumber">
-        <h3 class="telNumberHeader">Update Telephone Number</h3>
+        <h3 class="telNumberHeader"><i class="phone icon"></i>Update Telephone Number</h3>
         <div class="formID">
           <Form>
             <Form.Group className="mb-3" controlId="formUserID">
