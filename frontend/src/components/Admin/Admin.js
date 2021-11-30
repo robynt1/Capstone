@@ -36,7 +36,8 @@ function Admin() {
     })
       .catch((err) =>
         console.log(err));
-        closeModal();
+  } else {
+        Failed();
   }
 
   function deleteUser() {
@@ -75,6 +76,7 @@ function Admin() {
       }, 5000);
     }
   }
+
   function notify() {
     toast("Success, user deleted.");
     setTimeout(function () {
