@@ -23,10 +23,11 @@
 
 .ui.tiny.modal {
     width: 540px;
+    height: 300px;
     margin: 0;
-    left: 59.5% !important;
+    left: 35%!important;
+    top: 30% !important;
 }
-
 
 .table{
 
