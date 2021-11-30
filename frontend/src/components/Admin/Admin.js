@@ -36,7 +36,7 @@ function Admin() {
         setquote(response.data.quote);
         settelNumber(response.data.telNumber);
       } else {
-        closeModal();
+        FailedNoRecord();
       }
 
     })
@@ -97,14 +97,18 @@ function Failed() {
 
 }
 
+function FailedNoRecord(){
+  toast("No such record, please try again.")
+}
+
 function openModal() {
   setOpen(true);
 }
 
-function closeModal() {
-  setOpen(false);
-  Failed();
-}
+// function closeModal() {
+//   setOpen(false);
+//   Failed();
+// }
 return (
   <div>
     <div class="ui mini three item menu">
