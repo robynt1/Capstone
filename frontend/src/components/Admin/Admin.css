@@ -39,18 +39,18 @@
 
 .customerView {
     margin-top: 25px;
-
+    color: #0075b7;
 }
 
 .telNumberHeader{
     margin-top: 40px;
     text-align: center;
-
+    color: #0075b7;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #0d6efd;
+    background-color: red;
     border-color: #0d6efd;
     margin-left: 20px;
 }
