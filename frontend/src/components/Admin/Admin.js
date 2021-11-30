@@ -132,12 +132,13 @@ function Admin() {
               <p>Telephone is: {telNumber}</p>
             </Modal.Content>
             <Modal.Actions>
-           <Button positive onClick={() => setOpen(false)}>
-                         Close
-                       </Button>
-                       <Button onClick={() => window.location.reload()}>
-                         Delete User
-                       </Button>
+              <Button positive onClick={() => setOpen(false)}>
+                            Close
+                          </Button>
+                          <Button onClick={() => deleteUser()}>
+                            Get Another Quote
+                          </Button>
+            </Modal.Actions>
           </Modal>
         </Form>
       </div>
