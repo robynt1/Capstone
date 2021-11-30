@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Welcome() {
   return (
-  <div className = "body-welcome">
+
       <div class="ui mini three item menu">
         <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/" class="item">
           Home
@@ -14,7 +14,6 @@ function Welcome() {
         <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/Admin" class="item">
           Admin Panel
         </a>
-        {/* body */}
       </div>
       <body className="body-welcome">
           <div class="welcome">
@@ -37,9 +36,7 @@ function Welcome() {
               Get a Quote
             </Link>
           </div>
-
-      </body>
-    </div>
+       </div>
   );
 }
 
