@@ -135,7 +135,7 @@ function Admin() {
               <Button positive onClick={() => setOpen(false)}>
                             Close
                           </Button>
-                          <Button onClick={() => deleteUser()  style={{ marginLeft: "25px" }}}>
+                          <Button id = "modalButton" onClick={() => deleteUser() }>
                             Delete User
                           </Button>
             </Modal.Actions>
