@@ -28,6 +28,7 @@ function Admin() {
     const endpointURL = `${SERVER_URL}/capstone/applicant`;
    
     axios.get(endpointURL + `?id=${ID}`).then((response) => {
+
       if (response.data && !Array.isArray(response.data)) {
         openModal();
         console.log(response.data);
@@ -57,9 +58,7 @@ function deleteUser() {
 
 function putUserPhone(e) {
   e.preventDefault();
-
   const endpointURL = `${SERVER_URL}/capstone/customerDetails`;
-
   if (telNumber.length === 11) {
     axios
       .put(endpointURL + `?id=${ID}&newTelephoneNumber=${telNumber}`)
