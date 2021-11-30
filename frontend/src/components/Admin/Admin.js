@@ -113,6 +113,7 @@ function Admin() {
       <div class="formID">
         <Form>
           <Form.Group className="mb-3" controlId="formUserID">
+          <h4> View a customer </h4>
             <Form.Label>User ID:</Form.Label>
             <Form.Control
               type="text"
