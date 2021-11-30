@@ -105,8 +105,8 @@ function Admin() {
           Admin Panel
         </a>
       </div>
-      <h1 style={{ marginTop: "30px" }}> Welcome to the Admin Panel </h1>
-      <h4 style={{ marginBottom: "80px" }}> Please enter an ID to continue </h4>
+      <h1 style={{ marginTop: "70px" }}> Welcome to the Admin Panel </h1>
+      <h4 style={{ marginBottom: "80px" }}> View a customer </h4>
       <div>
         <ToastContainer />
       </div>
