@@ -1,4 +1,4 @@
-// const SERVER_URL = 'http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/';
-const SERVER_URL = 'http://localhost:8080/';
+ const SERVER_URL = 'http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/';
+
 
 export default SERVER_URL;
