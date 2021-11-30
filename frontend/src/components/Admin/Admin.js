@@ -26,9 +26,10 @@ function Admin() {
     console.log(ID);
 
     const endpointURL = `${SERVER_URL}/capstone/applicant`;
-    openModal();
+   
     axios.get(endpointURL + `?id=${ID}`).then((response) => {
       if (response.data && !Array.isArray(response.data)) {
+        openModal();
         console.log(response.data);
         setfirstName(response.data.firstName);
         setLastName(response.data.lastName);
