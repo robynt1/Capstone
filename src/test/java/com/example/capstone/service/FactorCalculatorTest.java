@@ -25,7 +25,7 @@ public class FactorCalculatorTest {
 
         FactorCalculator myCalculator = new FactorCalculator();
 
-        assertNotEquals(1.6, myCalculator.calculateVehicleTypeFactor("Hatchback"), 0.0);
+        assertNotEquals(1.9, myCalculator.calculateVehicleTypeFactor("Hatchback"), 0.0);
 
     }
 
