@@ -39,7 +39,7 @@
 
 .customerView {
     margin-top: 25px;
-    color: #0075b7;
+    color: #0075b7 !important;
 }
 
 .telNumberHeader{
