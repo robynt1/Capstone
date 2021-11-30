@@ -93,18 +93,17 @@ function Admin() {
     setOpen(true);
   }
   return (
-    <div>
-      <div class="ui mini three item menu" style={{ fontSize: "25px" }}>
-        <a href="http://localhost:3000/" class="item">
-          Home
-        </a>
-        <a href="http://localhost:3000/Create" class="item">
-          Get a Quote
-        </a>
-        <a href="http://localhost:3000/Admin" class="item">
-          Admin Panel
-        </a>
-      </div>
+    <div class="ui mini three item menu">
+           <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/" class="item">
+             Home
+           </a>
+           <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/Create" class="item">
+             Get a Quote
+           </a>
+           <a href="http://demo-react-spring-demo-react-spring.allstatejenkins2.conygre.com/Admin" class="item">
+             Admin Panel
+           </a>
+         </div>
       <h1 style={{ marginTop: "30px" }}> Welcome to the Admin Panel </h1>
       <h4 style={{ marginBottom: "80px" }}> Please enter an ID to continue </h4>
       <div>

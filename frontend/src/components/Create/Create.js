@@ -93,12 +93,6 @@ function Create() {
       />
 
       <div id="mainDiv">
-        <div className="welcoming-title">
-          <h4 style={{ marginTop: "-20px" }}>
-            {" "}
-            Please enter the following details to obtain a quote{" "}
-          </h4>
-        </div>
         <div>
           <ToastContainer />
         </div>
