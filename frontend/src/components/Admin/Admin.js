@@ -36,7 +36,9 @@ function Admin() {
     })
       .catch((err) =>
         console.log(err));
+        closeModal();
   }
+
   function deleteUser() {
     if (tableData) {
        const endpointURL = `${SERVER_URL}/capstone/delete`;
@@ -91,6 +93,11 @@ function Admin() {
 
   function openModal(){
     setOpen(true);
+  }
+
+  function closeModal(){
+        setOpen(false);
+        Failed();
   }
   return (
     <div>
