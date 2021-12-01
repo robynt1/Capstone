@@ -30,7 +30,7 @@ function Create() {
   function validateFormData(formData) {
     for (const [key, value] of Object.entries(formData)) {
       if (value === "") {
-        alert(`Please enter ${key} to obtain your quote.`);
+//        alert(`Please enter ${key} to obtain your quote.`);
         toast("Please fill out all entries");
         return false;
       }
