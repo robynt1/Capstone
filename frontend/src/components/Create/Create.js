@@ -85,6 +85,13 @@ function Create() {
           Admin Panel
         </a>
       </div>
+      <img
+        style={{ marginTop: "-70px" }}
+        class="photo2"
+        src="https://www.logo.wine/a/logo/Allstate/Allstate-Logo.wine.svg"
+        alt="new"
+      />
+
       <div id="mainDiv">
         <div>
           <ToastContainer />
