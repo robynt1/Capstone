@@ -151,7 +151,7 @@ function Create() {
                   <div class="column">
                     <Form.Field>
                       <input
-                        placeholder="Address 2"
+                        placeholder="City"
                         onChange={(e) => setcity(e.target.value)}
                       />
                     </Form.Field>
@@ -197,6 +197,7 @@ function Create() {
                         class="custom-select"
                       >
                         <option value="">Additional drivers</option>
+                        <option value="0">0</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
